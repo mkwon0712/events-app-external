@@ -1,8 +1,10 @@
-<ul >
+<div class="card-deck">
   {{#events}}
-    <li>
-        <h2>Titl122e:{{ title }}</h2>
-        <p>Description:{{ description }}</p>
-    </li>
+    <div class="card" style="max-width: 18rem;">
+        <div class="card-body">
+ <h2 class="card-title">{{ title }}</h2>
+        <p class="card-text">{{ description }}</p>
+        <button type="button" class="btn btn-primary">like</button>
+        </div>
+    </div>
   {{/events}}
-</ul>
